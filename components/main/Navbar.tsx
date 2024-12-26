@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
           <Image src="/NavLogo.png" alt="logo" width={70} height={70} className="cursor-pointer hover:animate-slowspin" />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">OnurSevinc</span>
+          <span className="font-bold ml-[10px] text-gray-300">OnurSevinc</span>
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-5 hidden md:block">
           {Socials.map((social) => (
             <Image src={social.src} alt={social.name} key={social.name} width={24} height={24} />
           ))}
